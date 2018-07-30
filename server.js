@@ -27,7 +27,7 @@ app.get('/get_github_user/:username', (req, res) => {
   });
 });
 
-app.get('/todays_commits/:username', (req, res) => {
+app.get('/recent_activity/:username', (req, res) => {
   console.log('req', );
   const username = req.params.username;
   const clientId = process.env.CLIENT_ID;
